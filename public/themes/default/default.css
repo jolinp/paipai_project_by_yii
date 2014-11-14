@@ -1,0 +1,182 @@
+/* CSS Document */
+.user-link , .date , .list th , .list tr td , .breadcrumb-text{
+	font-size:1.4em;
+}
+body {
+	background:#98CEE6;
+}
+.header {
+	background:#37ABE0;
+	border-bottom:#27627E 1px solid;
+	box-shadow: 0px 0px 1px rgb(211,232,252);
+}
+.left {
+	border-radius:4px;
+}
+
+
+.right , .left {
+	background:#FFF;
+}
+.logo {
+	background:url(images/top-left.png);
+}
+.header_right {
+	background:url(images/top-right.png);
+}
+.date {
+	background:url(images/date-bg.png) repeat-x;
+	border: #C0C0C0 1px solid;
+	border-radius:40px;
+	text-align:left;
+	text-indent:3em;
+	line-height:40px;
+}
+.left {
+	border:#C7C7C7 1px solid;
+}
+.link {
+	font-size:1.6em;
+	text-indent:80px;
+	line-height:48px;
+	background:url(images/link.png) repeat-x;
+	border-bottom:#CECECE 1px solid;
+}
+.link:hover .z-dot {
+	display:block;
+	background-position:-21px -20px;
+}
+a.link-active {
+	cursor:default;
+	background:url(images/link-active.png) repeat-x;
+	border-bottom:#5799B5 1px solid;
+}
+a.link-active .z-dot {
+	display:block;
+}
+.breadcrumb {
+	background:url(images/breadcrumb-bg.png) #F1F1F1 repeat-x;
+}
+.create-active {
+	background:url(images/tab-bg.png) no-repeat;
+	background-position:-25px -114px;
+	font-size:1.6em;
+	line-height:42px;
+	text-indent:33px;
+	font-weight:bold;
+}
+.tab-link {
+	background:url(images/tab-bg.png) no-repeat 0 0;
+	text-align:center;
+	line-height:45px;
+	font-size:1.6em;
+	font-weight:bold;
+}
+a.tab-active {
+	color:#FFF;
+	background-position:0 -57px;
+}
+
+.footer {
+	background:#004986;
+	text-align:center;
+}
+.copy {
+	color:rgb(255,255,255);
+	font-size:1.2em;
+	line-height:47px;
+}
+
+
+.list , #right-content .grid-view table.items {
+	border:none;
+	border-spacing: 1px;
+	background:#DADADA;
+}
+.list th , .list td {
+	cursor:default;
+}
+.list th , .grid-view table.items thead th {
+	line-height:39px;
+	background:url(images/table-title.png) #EDEEED repeat-x;
+}
+.grid-view table.items thead th a , .grid-view table.items thead th {
+	color:#000;
+}
+.grid-view table.items thead th {
+	font-size:1.4em;
+}
+#right-content .grid-view table.items tr.odd {
+	background:none;
+}
+#right-content .grid-view table.items tr.even {
+	background:none;
+}
+#right-content .grid-view table.items tr.odd td {
+	background:#F2F2F2;
+}
+#right-content .grid-view table.items td {
+	border:none;
+	background:#FFF;
+	line-height:30px;
+	font-size:1.2em;
+}
+#right-content .grid-view table.items {
+	border-collapse:inherit;
+}
+.list tr td {
+	background:#FFF;
+	line-height:24px;
+	text-align:center;
+}
+.list tr:nth-child(odd) td {
+	background:#FFF;
+}
+.list tr:nth-child(even) td {
+	background:#F2F2F2;
+}
+.checker {
+    background: url(images/checkboxes.png) no-repeat 0 0;
+    display: inline-block;
+    height: 16px;
+    text-align: center;
+    width: 16px;
+	margin-top:5px;
+}
+.checker.checked {
+	background-position:0 -20px;
+}
+
+
+.user-link {
+	color:#FFF;
+}
+.user-link:hover {
+	text-decoration:underline;
+}
+
+
+.z-icon {
+	background:url(images/css_sprite.png) no-repeat;
+}
+.z-user {
+	background-position:5px 1px;
+}
+.z-exit {
+	background-position:5px -18px;
+}
+.z-help {
+	background-position:5px -39px;
+}
+.z-date {
+	background-position: -21px -1px;
+}
+.z-dot {
+	background-position:-21px -40px;
+}
+.z-add {
+	background-position:-377px 0;
+}
+.z-retweet {
+	background-position:-380px -34px;
+}

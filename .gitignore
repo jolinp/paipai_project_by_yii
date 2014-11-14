@@ -4,6 +4,9 @@ protected/runtime/*
 !protected/runtime/.gitignore
 protected/data/*.db
 themes/classic/views/
+public/assets/*
+framework
+protected/vendor/toplinker
 
 # =========================
 # Operating System Files
@@ -17,7 +20,8 @@ themes/classic/views/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*

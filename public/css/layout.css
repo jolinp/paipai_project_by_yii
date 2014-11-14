@@ -1,0 +1,176 @@
+/* CSS Document */
+html {
+	*overflow-x:hidden;
+}
+.header , .footer , .link , .breadcrumb , .list {
+	width:100%;
+}
+.top-menu , .main {
+	width:70%;
+}
+.main , .top-menu , .header , .footer {
+	min-width:96em;
+}
+.main , .top-menu {
+	_width:1002px;
+}
+.header , .main {
+	margin-bottom:1em;
+}
+.header , .user-link , .date , .link , .relative , .top-right {
+	position:relative;
+}
+.logo , .header_right , .da-mai , .create-active , .tab {
+	position:absolute;
+}
+.logo {
+	left:0px;
+}
+.logo , .header_right {
+	top:0px;
+}
+.header_right {
+	right: 0px;
+}
+.logo {
+	z-index:10;
+}
+.header_right {
+	z-index:5;
+}
+.left , .top-left , .selecter-all , .breadcrumb-text , .tab li {
+	float:left;
+}
+.right , .user-info , .user-li , .top-right {
+	float:right;
+}
+.left , .top-left {
+	width:19.79%;
+	min-width:19em;
+}
+.right , .top-right {
+	width:78.64%;
+	min-width:75.5em;
+}
+.link , .z-icon , .create-active , .tab-link {
+	display:block;
+}
+.z-dot {
+	display:none;
+}
+.left , .right {
+	min-height:30em;
+}
+
+
+.header {
+	height:10em;
+}
+.top-left {
+	padding-bottom:1em;
+}
+.logo {
+	width:590px;
+	height:108px;
+}
+.header_right {
+	width:482px;
+	height:50px;
+}
+.da-mai {
+	left: 13.5em;
+    top: 1.2em;
+}
+.footer {
+	height:47px;
+}
+.date {
+	height:40px;
+}
+.link {
+	height:48px;
+}
+.breadcrumb {
+	height:50px;
+}
+.right {
+	padding-bottom:2em;
+}
+.top-right {
+	height:5.1em;
+}
+
+.user-info-box {
+	margin-right:3em;
+}
+.user-info {
+	margin-top:4em;
+}
+.user-li {
+	padding:2em;
+}
+.td {
+	max-width:100px;
+}
+.td.limit {
+	max-width:240px;
+}
+.selecter-all {
+	width:30px;
+	margin:12px 0 0 16px;
+}
+span.select-all {
+}
+.breadcrumb-text {
+	line-height:50px;
+}
+.create-active {
+	width:129px;
+	height:42px;
+	right:20px;
+	top:0px;
+}
+.tab {
+	left:0px;
+	bottom:-1px;
+}
+.tab-link {
+	width:179px;
+	height:45px;
+}
+
+
+.z-user , .z-exit , .z-help {
+	width:1.2em;
+	height:1.2em;
+	top:0em;
+	left:-1.5em;
+}
+.z-date {
+	width:0.9em;
+	height:0.9em;
+	top:15px;
+	left:20px;
+}
+.z-dot {
+	width:10px;
+	height:12px;
+	top:17px;
+	left:55px;
+}
+.z-add {
+	width:23px;
+	height:23px;
+	top:10px;
+	left:10px;
+}
+.z-retweet {
+	width:20px;
+	height:12px;
+	top:14px;
+	left:10px;
+}
+.z-icon {
+	position:absolute;
+	z-index:1;
+}

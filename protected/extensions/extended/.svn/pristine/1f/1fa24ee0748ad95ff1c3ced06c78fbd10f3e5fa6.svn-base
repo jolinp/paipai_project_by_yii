@@ -1,0 +1,87 @@
+<?php
+class ExtendedFormBuilder
+{
+    private $_model;
+
+    private $_params;
+
+    private $_property = array();
+
+    private $_notDisplay = array();
+
+    public $defaultElement = 'text';
+
+    public function __construct($model, array $params = array())
+    {
+        $this->_model = $model;
+        $this->_params = $params;
+    }
+
+    public function render()
+    {
+        $config = $this->getConfig();
+        $form = new \CForm($config, $this->_model);
+        return $form->render();
+    }
+
+    public function setAction(array $url)
+    {
+        $this->_property['action'] = $url;
+    }
+
+    public function setNotDisplay($string)
+    {
+        $string_tmp = str_replace(" ", "", $string);
+        $array = explode(",", $string_tmp);
+
+        $this->_notDisplay = $array;
+    }
+
+    /**
+     * below is private function
+     */
+    private function getConfig()
+    {
+        $initConfig = $this->initConfig();
+        $config = array_merge_recursive($initConfig, $this->_property);
+        return $config;
+    }
+
+    private function initConfig()
+    {
+        if (empty($this->configPath)) {
+            return array(
+                'title' => '表单',
+                'elements' => $this->getElements(),
+                'buttons' => $this->getButtons(),
+            );
+        } else {
+            return $this->configPath;
+        }
+    }
+
+    private function getElements()
+    {
+        $elements = array();
+        foreach ($this->_model->attributeNames() as $attributeName) {
+            if (in_array($attributeName, $this->_notDisplay))
+                continue;
+
+            $elements[$attributeName] = array(
+                'type' => array_key_exists($attributeName, $this->_params) ? $this->_params[$attributeName] : $this->defaultElement,
+                'class' => $attributeName);
+        }
+
+        return $elements;
+    }
+
+    private function getButtons()
+    {
+        return array(
+            'login' => array(
+                'type' => 'submit',
+                'label' => '提交',
+            ),
+        );
+    }
+}

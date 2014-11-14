@@ -1,0 +1,58 @@
+/* CSS Document */
+body , div , ul , li , header , nav , footer , section , aside , article , p , h1 {
+	margin:0px auto;
+	padding:0px;
+	font-family:arial,宋体,sans-serif;
+	font-family:SimHei,黑体;
+}
+header , footer , section , aside , article {
+	display:block;
+}
+ul , li {
+	list-style:none;
+}
+body {
+	font-size:63%;
+}
+a {
+	text-decoration:none;
+	color:#000;
+	cursor:pointer;
+}
+img {
+	outline:none;
+	border:none;
+}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}* html .clearfix{height:1%;}.clearfix{display:block;}
+
+.opacity {
+    -khtml-opacity: .3;
+    -moz-opacity: 0.3;
+    opacity:0.3;
+    opacity: .3;
+    filter: alpha(opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+}
+
+.opacity0 {
+    -khtml-opacity: .0;
+    -moz-opacity: 0.0;
+    opacity:0.0;
+    opacity: .0;
+    filter: alpha(opacity=0);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+
+.td {
+	padding:7px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.red {
+	color:#CC0000;
+}

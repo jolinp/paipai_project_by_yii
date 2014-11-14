@@ -1,0 +1,102 @@
+/* CSS Document */
+.item-view {
+    float: left;
+    height: 180px;
+    width: 140px;
+    margin: 6px;
+    padding: 3px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 9;
+}
+
+.item-pad {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 140px;
+    height: 140px;
+    z-index: 10;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.item-pic {
+    vertical-align: middle;
+    max-width: 140px;
+    max-height: 140px;
+}
+
+.item-name {
+    font: 12px Microsoft YaHei,SimSun,tahoma,arial,sans-serif;
+    height: 32px;
+    line-height: 16px;
+    width: 140px;
+    overflow: hidden;
+    display: block;
+    background-color: #fff;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.item-pad-selected {
+    border: 3px solid #27B950;
+    padding: 0px;
+}
+
+.item-pad-hover {
+    border: 3px solid #ff6600;
+    padding: 0px;
+}
+
+.item-actived {
+    font: 14px Microsoft YaHei, SimSun, tahoma, arial, sans-serif;
+    color: #fff;
+    padding: 0px;
+    width: 140px;
+    background-color: #ff6600;
+    display: none;
+    position: absolute;
+    z-index: 11;
+}
+
+.item-selected {
+    font: 14px Microsoft YaHei, SimSun, tahoma, arial, sans-serif;
+    color: #fff;
+    padding: 0px;
+    width: 140px;
+    background-color: #27B950;
+    display: none;
+    position: absolute;
+    z-index: 11;
+}
+
+.item-added {
+    font: 14px Microsoft YaHei, SimSun, tahoma, arial, sans-serif;
+    color: #fff;
+    padding: 0px;
+    width: 140px;
+    background-color: #ff6600;
+    display: none;
+    position: absolute;
+    z-index: 11;
+}
+
+#activity-form {
+	font-size:14px;
+	margin-top:10px;
+}
+#activity-form fieldset {
+	border:#F4F4F4 1px solid; width:92%; display:block; margin:0px auto;
+}
+.field_activity_name , .field_begin_time , .field_end_time , .buttons {
+	margin-top:20px;
+}
+.summary , .pager {
+	font-size:14px;
+}
+.z-next-btn , .z-form-next {
+	margin:20px 10px;
+}
